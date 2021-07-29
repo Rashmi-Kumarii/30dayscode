@@ -1,9 +1,11 @@
 function processData(input) {
     //Enter your code here
+    //split the array to fetch individual words and remove the first element as it contain no of elements present in it
     let inputcopy=input.split('\n').slice(1);
     //console.log(inputcopy);
     
     let str;
+    //for each string present in the array ,will collect the even place and odd place characters and join them  having space in between them
     inputcopy.forEach((str)=>{
         let even='',odd='';
         for(let i=0;i<str.length;i++)
